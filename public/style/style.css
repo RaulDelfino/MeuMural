@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+body{
+    background-color:#ffff;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.form{
+    background-color:#eceefd;
+    padding: 30px;
+    width: 45%;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.form h1 {
+    padding: 20px 10px;
+}
+.form button{
+    width: 20%;
+    padding: 8px;
+    background-color: #82b8ff;
+    color: #eceefd;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.form button:focus{
+    border: 1.5px solid #3b4feccb;
+}
+
+#title , #desc {
+    margin: 10px 0 ;
+    width: 40%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+#title:focus , #desc:focus{
+    outline: none;
+    border: none;
+}
+#desc{
+    width: 100%;
+}
+.mural{
+    background-color:#eceefd;
+    padding: 15px;
+    width: 40%;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.card{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    word-wrap: break-word;
+    background-color:#ffff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.card-title{
+    font-size: 1.17em;
+    
+}
+.card-text{
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.close{
+    margin-top: 5px;
+    font-weight: bolder;
+    border: none;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+}
+.edit{
+    margin-top: 5px;
+    font-weight: bolder;
+    border: none;
+    padding: 5px 13px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: yellow;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal .content{
+    background-color:#eceefd;
+    border-radius: 5px;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content button{
+    width: 20%;
+    padding: 8px;
+    background-color: #82b8ff;
+    color: #eceefd;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.content button:focus{
+    border: 1.5px solid #3b4feccb;
+}
+.content input{
+    margin: 10px 0 ;
+    width: 40%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.content input:focus{
+    outline: none;
+    border: none;
+}
+
